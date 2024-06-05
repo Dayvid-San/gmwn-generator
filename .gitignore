@@ -1,0 +1,14 @@
+# Ignorar arquivos python compilados
+*.pyc
+*.pyo
+*.pyd
+*.ps1
+package.json
+package-lock.json
+
+# Ignorara pastas geradas
+__pycache__/
+pycache/
+.env/
+node_modules/
+tailwindcss/node_modules/

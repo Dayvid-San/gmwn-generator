@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--=== SCRIPTS ==-->
+    <script src="https://unpkg.com/htmx.org@1.9.12/dist/htmx.js" integrity="sha384-qbtR4rS9RrUMECUWDWM2+YGgN3U4V4ZncZ0BvUcg9FGct0jqXz3PUdVpU1p0yrXS" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <!--=== SCRIPTS ==-->
+    
+    <!-- CSS -->
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-twilight.min.css" integrity="sha512-ch9ThmrGmkVrVm9tL/puGmSfzQps4yk9LDrWuswb65ZnPOIKuYZBen1yn3ez/fEbgeBqrU/IJ443OqgallfE9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{{url_for('static', path='/css/style.css')}}">
+    <!-- CSS -->
+    <title>FastAPI</title>
+</head>
+<body>
+    <div class="h-screen"> <!--ORGANIZING CONTAINER-->
+        
+        <div class=""> <!--CONTENT CONTAINER-->
+
+            <aside class=""><!--SIDE BAR CONTAINER-->
+                <div class="">
+                    <h1 class="text-2xl">Guilhermwn</h1>
+                </div>
+                <div class="">
+                    <a class="hover:text-turquoise-600" href="#">Nota 1</a>
+                    <a class="hover:text-turquoise-600" href="#">Nota 1</a>
+                    <a class="hover:text-turquoise-600" href="#">Nota 1</a>
+                    <a class="hover:text-turquoise-600" href="#">Nota 1</a>
+                    <a class="hover:text-turquoise-600" href="#">Nota 1</a>
+                </div>
+            
+            </aside> <!--SIDE BAR CONTAINER-->
+            
+            <main class=""> <!--MIDDLE NOTE CONTENT CONTAINER-->
+                <div class="m-2">
+                    {{ content|safe }}
+                </div>
+            </main> <!--MIDDLE NOTE CONTENT CONTAINER-->
+
+        </div> <!--CONTENT CONTAINER-->
+    </div> <!--ORGANIZING CONTAINER-->
+</body>
+</html>
