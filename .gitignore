@@ -12,3 +12,4 @@ pycache/
 .env/
 node_modules/
 tailwindcss/node_modules/
+colors/
