@@ -1,5 +1,5 @@
-# Descrição
-HTMX é um framework para **html** que traz certas funcionalidades ao código html que atualmente só funcionariam com *javascript* incorporado.
+## Descrição
+HTMX é um framework para html que traz certas funcionalidades ao código html que atualmente só funcionariam com javascript incorporado.
 
 ## Funcionamento
 Um exemplo básico do o que o HTMX proporciona:
@@ -13,15 +13,16 @@ Qual a funcionalidade que essa âncora faz, quando um usuário clica nele? A tag
 
 Agora com HTMX temos mais algumas funcionalidades quando aplicamos ela às qualquer tag disponível:
 ```html
-<button hx-post="/clicked" 
-        hx-trigger="click" 
-        hx-target="#parent-div" 
-        hx-swap="outerHTML">
+<button hx-post="/clicked"
+    hx-trigger="click"
+    hx-target="#parent-div"
+    hx-swap="outerHTML"
+>
     Click Me!
 </button>
 ```
 
-> Essas novas funcionalidades avisam ao navegador para fazer uma requisição HTTP POST para o caminho "/clicked", e usar o conteúdo da resposta para substituir inteiramente o elemento com o id "parent-div".
+Essas novas funcionalidades avisam ao navegador para fazer uma requisição HTTP POST para o caminho "/clicked", e usar o conteúdo da resposta para substituir inteiramente o elemento com o id "parent-div".
 
 ### innerHTML e outerHTML
 
